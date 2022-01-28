@@ -1,0 +1,9 @@
+{
+  "name": "Stopwatch",
+  "description": "An excellent timer. Easy to use. A fast and reliable stopwatch.",
+  "version": "1.1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "/public/index.html"
+  }
+}

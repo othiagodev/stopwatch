@@ -1,0 +1,109 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #f8f8f2;
+  background-color: #292a2d;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+
+#root .content {
+  min-width: 19rem;
+  margin: 0rem 2rem;
+}
+
+#root .content div.timer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #59abe3;
+  border-radius: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+#root .content div.timer span.normal {
+  margin-left: 1rem;
+}
+
+#root .content div.timer span.mini {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+#root .content button.btn {
+  padding: unset;
+  margin: unset;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  background-color: transparent;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+#root .content .buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+#root .content button.btn:hover {
+  filter: brightness(85%);
+}
+
+#root .content button.btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#root .content button.btn img {
+  height: 2.5rem;
+}
+
+#root .content .inputContainer {
+  height: 0rem;
+  transition: height 0.5s ease-out;
+}
+
+#root .content .inputContainer input[type="number"] {
+  color: #f8f8f2;
+  height: 2.5rem;
+  width: -webkit-fill-available;
+  font-size: 1.2rem;
+  background-color: #303134;
+  border: none;
+  border-radius: 0.8rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#root .inputContainer input[type="number"]::-webkit-inner-spin-button,
+#root .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#root footer {
+  border-top: 1px solid #ffffff1a;
+  background-color: #202124;
+}
+
+#root footer .title hr {
+  border: 1px solid gray;
+}
+
+#root footer .title h1 {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  color: #9aa0a0;
+  font-size: 1.2rem;
+}
